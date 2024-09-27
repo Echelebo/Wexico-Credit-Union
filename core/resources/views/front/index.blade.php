@@ -1,15 +1,11 @@
-<?php
-header('location: https://wexicocrunion.com.com/');
-exit();
-?>
 @extends('layout')
 @section('css')
 
 @stop
 @section('content')
     <!--
-            Welcome Slider
-            ==================================== -->
+                    Welcome Slider
+                    ==================================== -->
 
     <section class="">
         <div class="container-fluid">
@@ -249,7 +245,7 @@ exit();
                 </div>
             </div>
             <!-- end of investing
-              <!-- end of toggler -->
+                      <!-- end of toggler -->
 
             <div class="row"
                 style="padding-left: 3.5%; padding-right: 3%; margin-top: 2%; padding-bottom: 3%; background-image: url('https://grandfirm-bancshares.com/temp/images/back.png'); background-size: contain; background-attachment: fixed;">
@@ -363,9 +359,9 @@ exit();
                                 <img data-u="image"
                                     src="https://central-ab.com/temp/vertical-slider.slider.jquery/img/002.jpg" />
                                 <!-- <div style="position:absolute;top:57px;left:92px;width:400px;height:250px;font-size:16px;color:#ffffff;line-height:1.88;text-align:left;padding:10px 10px 10px 10px;box-sizing:border-box;background-color:rgba(255,188,5,0.8);background-clip:padding-box;">Settings <br /><br />
-                                Layout -> Slide -> Orientation: Vertical<br />
-                                Options -> Drag -> Orientation: Vertical
-                            </div> -->
+                                        Layout -> Slide -> Orientation: Vertical<br />
+                                        Options -> Drag -> Orientation: Vertical
+                                    </div> -->
                             </div>
                             <div>
                                 <img data-u="image"
