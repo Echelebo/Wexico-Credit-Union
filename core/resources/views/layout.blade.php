@@ -672,10 +672,10 @@
     </noscript>
     <meta name="generator"
         content="Elementor 3.20.3; features: additional_custom_breakpoints, block_editor_assets_optimize, e_image_loading_optimization; settings: css_print_method-external, google_font-enabled, font_display-auto">
-    <link rel="icon" href="{{ url('/') }}/asset/{{ $logo->image_link }}" sizes="32x32" />
-    <link rel="icon" href="{{ url('/') }}/asset/{{ $logo->image_link }}" sizes="192x192" />
-    <link rel="apple-touch-icon" href="{{ url('/') }}/asset/{{ $logo->image_link }}" />
-    <meta name="msapplication-TileImage" content="{{ url('/') }}/asset/{{ $logo->image_link }}" />
+    <link rel="icon" href="{{ url('/') }}/asset/{{ $logo->image_link2 }}" sizes="32x32" />
+    <link rel="icon" href="{{ url('/') }}/asset/{{ $logo->image_link2 }}" sizes="192x192" />
+    <link rel="apple-touch-icon" href="{{ url('/') }}/asset/{{ $logo->image_link2 }}" />
+    <meta name="msapplication-TileImage" content="{{ url('/') }}/asset/{{ $logo->image_link2 }}" />
 </head>
 
 <body id="cmsmasters_body"
