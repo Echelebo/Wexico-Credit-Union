@@ -680,144 +680,7 @@
 
 <body id="cmsmasters_body"
     class="home page-template-default page page-id-7199 wp-embed-responsive theme-multibank woocommerce-no-js cmsmasters-content-layout-fullwidth elementor-default elementor-kit-25 elementor-page elementor-page-7199">
-    <div class="cmsmasters-demos-preview">
-        <div class="cmsmasters-demos-preview__buttons">
-            <span class="cmsmasters-demos-preview__toggle">
-                <span class="cmsmasters-demos-preview__toggle-big">
-                    <svg width="26" height="22" viewBox="0 0 26 22" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M25.2383 7.82439H22.3828V4.96873C22.3828 4.548 22.0416 4.20702 21.6211 4.20702H18.7655V1.35156C18.7655 0.930832 18.4245 0.589844 18.0037 0.589844H0.761719C0.340988 0.589844 0 0.930832 0 1.35156V13.4089C0 13.8297 0.340988 14.1707 0.761719 14.1707H3.61717V17.0261C3.61717 17.4468 3.95816 17.7878 4.37889 17.7878H7.23454V20.6435C7.23454 21.064 7.57553 21.4052 7.99626 21.4052H25.2383C25.659 21.4052 26 21.064 26 20.6435V8.58611C26 8.16537 25.659 7.82439 25.2383 7.82439ZM1.52344 2.11328H17.242V12.6472H1.52344V2.11328ZM5.14061 14.1707H18.0037C18.4245 14.1707 18.7655 13.8297 18.7655 13.4089V5.73045H20.8594V16.2646H5.14061V14.1707ZM24.4766 19.8818H8.75798V17.788H21.6211C22.0418 17.788 22.3828 17.4468 22.3828 17.0263V9.34782H24.4766V19.8818Z"
-                            fill="white" />
-                    </svg>
-                    <span>Demos</span>
-                </span>
-                <span class="cmsmasters-demos-preview__toggle-small">
-                    <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 12L6.5 6.5L1 1" stroke="white" stroke-width="2" />
-                    </svg>
-                </span>
-            </span>
-            <a href="https://themeforest.net/item/multibank-business-and-finance-wordpress-theme/35167346?s_rank=1"
-                class="cmsmasters-demos-preview__buy-link" target="_blank">
-                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M8.37692 16.8088H8.37811C8.3791 16.8088 8.3801 16.8086 8.38109 16.8086H22.1914C22.5314 16.8086 22.8303 16.5831 22.9238 16.2561L25.9706 5.59209C26.0363 5.36218 25.9903 5.11502 25.8465 4.92419C25.7025 4.73337 25.4773 4.62109 25.2383 4.62109H6.62021L6.0757 2.1707C5.99814 1.82217 5.68909 1.57422 5.33203 1.57422H0.761719C0.340988 1.57422 0 1.91521 0 2.33594C0 2.75667 0.340988 3.09766 0.761719 3.09766H4.72107C4.81747 3.53188 7.32678 14.824 7.47119 15.4736C6.66167 15.8255 6.09375 16.6326 6.09375 17.5703C6.09375 18.8303 7.1189 19.8555 8.37891 19.8555H22.1914C22.6121 19.8555 22.9531 19.5145 22.9531 19.0938C22.9531 18.673 22.6121 18.332 22.1914 18.332H8.37891C7.95897 18.332 7.61719 17.9902 7.61719 17.5703C7.61719 17.151 7.95778 16.8098 8.37692 16.8088ZM24.2284 6.14453L21.6167 15.2852H8.98987L6.95862 6.14453H24.2284Z"
-                        fill="white" />
-                    <path
-                        d="M7.61719 22.1406C7.61719 23.4006 8.64233 24.4258 9.90234 24.4258C11.1624 24.4258 12.1875 23.4006 12.1875 22.1406C12.1875 20.8806 11.1624 19.8555 9.90234 19.8555C8.64233 19.8555 7.61719 20.8806 7.61719 22.1406ZM9.90234 21.3789C10.3223 21.3789 10.6641 21.7207 10.6641 22.1406C10.6641 22.5606 10.3223 22.9023 9.90234 22.9023C9.48241 22.9023 9.14062 22.5606 9.14062 22.1406C9.14062 21.7207 9.48241 21.3789 9.90234 21.3789Z"
-                        fill="white" />
-                    <path
-                        d="M18.3828 22.1406C18.3828 23.4006 19.408 24.4258 20.668 24.4258C21.928 24.4258 22.9531 23.4006 22.9531 22.1406C22.9531 20.8806 21.928 19.8555 20.668 19.8555C19.408 19.8555 18.3828 20.8806 18.3828 22.1406ZM20.668 21.3789C21.0879 21.3789 21.4297 21.7207 21.4297 22.1406C21.4297 22.5606 21.0879 22.9023 20.668 22.9023C20.248 22.9023 19.9062 22.5606 19.9062 22.1406C19.9062 21.7207 20.248 21.3789 20.668 21.3789Z"
-                        fill="white" />
-                </svg>
-                <span>Buy Now</span>
-            </a>
-        </div>
-        <div class="cmsmasters-demos-preview__container">
-            <span class="cmsmasters-demos-preview__close">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M16 14.56L14.48 16L8 9.44L1.52 16L0.08 14.56L6.56 8L0 1.44L1.52 0L8 6.56L14.48 0L16 1.44L9.44 8L16 14.56Z"
-                        fill="#151515" />
-                </svg>
-            </span>
-            <div class="cmsmasters-demos-preview__heading">
-                <div class="cmsmasters-demos-preview__heading-img">
-                    <svg width="90" height="131" viewBox="0 0 90 131" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M23.402 125.709L23.3815 125.699C16.5176 122.635 10.9761 117.956 6.80825 111.704C2.56962 105.346 0.423022 97.5058 0.185414 88.3579L0.105469 85.28H27.5462L27.6038 88.2211C27.7037 93.3153 29.3219 97.4622 32.398 100.842C35.4397 103.958 39.7881 105.68 45.8544 105.68C51.6423 105.68 55.6389 104.093 58.3186 101.324C61.1262 98.4225 62.5744 94.7744 62.5744 90.15C62.5744 84.7519 60.6744 81.032 57.054 78.4977L57.0188 78.473L56.9843 78.4473C53.2091 75.6401 48.1653 74.11 41.6044 74.11H29.7644V50.26H41.7744C47.0765 50.26 51.2518 49.0179 54.4944 46.7291C57.4391 44.6504 59.0044 41.6079 59.0044 37.11C59.0044 33.4311 57.8161 30.7803 55.5967 28.8169L55.5509 28.7764L55.5068 28.7341C53.3839 26.6961 50.2495 25.49 45.6844 25.49C40.7692 25.49 37.2597 26.9182 34.7713 29.4845C32.2203 32.2333 30.7805 35.591 30.4868 39.7037L30.2878 42.49H3.11814L3.24695 39.3664C3.72827 27.6943 7.79922 18.2085 15.6413 11.2377L15.6501 11.2299L15.6589 11.2222C23.5583 4.31029 33.6546 0.959961 45.6844 0.959961C54.1781 0.959961 61.5384 2.48978 67.6284 5.71286C73.7086 8.75936 78.4072 12.9119 81.5689 18.2131C84.8099 23.4576 86.4244 29.27 86.4244 35.58C86.4244 42.8618 84.3732 49.2142 80.1539 54.4579C77.9099 57.2621 75.3355 59.5688 72.4407 61.365C76.4561 63.3074 79.94 66.098 82.8619 69.7271C87.5678 75.4569 89.8244 82.6249 89.8244 91C89.8244 98.0802 88.1087 104.612 84.6557 110.532C81.1772 116.495 76.105 121.227 69.5544 124.747C62.998 128.332 55.0505 130.04 45.8544 130.04C37.6818 130.04 30.1891 128.617 23.4226 125.717L23.402 125.709Z"
-                            fill="url(#paint0_linear)" />
-                        <defs>
-                            <linearGradient id="paint0_linear" x1="45" y1="-10" x2="44.999"
-                                y2="130" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#7D7DF4" />
-                                <stop offset="1" stop-color="white" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="cmsmasters-demos-preview__heading-title">
-                    <span>Amazing Ready-to-use Demo Websites</span>
-                </div>
-                <div class="cmsmasters-demos-preview__heading-subtitle">
-                    <span>Quick & easy one-click install</span>
-                </div>
-            </div>
-            <div class="cmsmasters-demos-preview__content">
-                <div class="cmsmasters-demos-preview__content-inner">
-                    <div class="cmsmasters-demos-preview__demo">
-                        <div class="cmsmasters-demos-preview__demo-img">
-                            <img src="{{ url('/') }}/wp-content/themes/multibank-child/assets/images/classic.jpg"
-                                alt="Classic" title="Classic" />
-                            <a href="https://multibank.cmsmasters.net/classic/" target="_blank"></a>
-                        </div>
-                        <div class="cmsmasters-demos-preview__demo-heading">
-                            <span class="cmsmasters-demos-preview__demo-title">Classic</span>
-                            <a href="https://multibank.cmsmasters.net/classic/"
-                                class="cmsmasters-demos-preview__demo-link" target="_blank">View Demo</a>
-                        </div>
-                    </div>
-                    <div class="cmsmasters-demos-preview__demo">
-                        <div class="cmsmasters-demos-preview__demo-img">
-                            <img src="{{ url('/') }}/wp-content/themes/multibank-child/assets/images/alternative.jpg"
-                                alt="Alternative" title="Alternative" />
-                            <a href="index.html" target="_blank"></a>
-                        </div>
-                        <div class="cmsmasters-demos-preview__demo-heading">
-                            <span class="cmsmasters-demos-preview__demo-title">Alternative</span>
-                            <a href="index.html" class="cmsmasters-demos-preview__demo-link" target="_blank">View
-                                Demo</a>
-                        </div>
-                    </div>
-                    <div class="cmsmasters-demos-preview__demo">
-                        <div class="cmsmasters-demos-preview__demo-img">
-                            <img src="{{ url('/') }}/wp-content/themes/multibank-child/assets/images/modern.jpg"
-                                alt="Modern" title="Modern" />
-                            <a href="https://multibank.cmsmasters.net/modern/" target="_blank"></a>
-                        </div>
-                        <div class="cmsmasters-demos-preview__demo-heading">
-                            <span class="cmsmasters-demos-preview__demo-title">Modern</span>
-                            <a href="https://multibank.cmsmasters.net/modern/"
-                                class="cmsmasters-demos-preview__demo-link" target="_blank">View Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cmsmasters-demos-preview__footer">
-                <a href="https://multibank.cmsmasters.net/"
-                    class="cmsmasters-demos-preview__footer-link cmsmasters-demos-preview__back-to-landing">
-                    <svg width="20" height="15" viewBox="0 0 20 15" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M13.6601 0.278946L19.7211 6.33986C20.093 6.71179 20.093 7.3148 19.7211 7.68673L13.6601 13.7476C13.2882 14.1196 12.6852 14.1196 12.3133 13.7476C11.9413 13.3757 11.9413 12.7727 12.3133 12.4008L16.7484 7.96568H0V6.06092H16.7484L12.3133 1.62582C11.9413 1.25389 11.9413 0.650874 12.3133 0.278946C12.6852 -0.092982 13.2882 -0.092982 13.6601 0.278946Z"
-                            fill="white" />
-                    </svg>
-                    <span>Back to Landing Page</span>
-                </a>
-                <a href="https://themeforest.net/item/multibank-business-and-finance-wordpress-theme/35167346?s_rank=1"
-                    class="cmsmasters-demos-preview__footer-link cmsmasters-demos-preview__footer-buy">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M6.44379 12.9298H6.4447C6.44546 12.9298 6.44623 12.9297 6.44699 12.9297H17.0703C17.3318 12.9297 17.5618 12.7562 17.6337 12.5047L19.9774 4.30161C20.0279 4.12476 19.9925 3.93463 19.8819 3.78784C19.7711 3.64105 19.5979 3.55469 19.4141 3.55469H5.09247L4.67361 1.66977C4.61395 1.40167 4.37622 1.21094 4.10156 1.21094H0.585937C0.262299 1.21094 0 1.47324 0 1.79688C0 2.12051 0.262299 2.38281 0.585937 2.38281H3.63159C3.70575 2.71683 5.63599 11.403 5.74707 11.9028C5.12436 12.1735 4.6875 12.7943 4.6875 13.5156C4.6875 14.4849 5.47607 15.2734 6.44531 15.2734H17.0703C17.3939 15.2734 17.6562 15.0111 17.6562 14.6875C17.6562 14.3639 17.3939 14.1016 17.0703 14.1016H6.44531C6.12228 14.1016 5.85937 13.8387 5.85937 13.5156C5.85937 13.1931 6.12137 12.9306 6.44379 12.9298ZM18.6372 4.72656L16.6283 11.7578H6.91528L5.35278 4.72656H18.6372Z"
-                            fill="white" />
-                        <path
-                            d="M5.85938 17.0312C5.85938 18.0005 6.64795 18.7891 7.61719 18.7891C8.58643 18.7891 9.375 18.0005 9.375 17.0312C9.375 16.062 8.58643 15.2734 7.61719 15.2734C6.64795 15.2734 5.85938 16.062 5.85938 17.0312ZM7.61719 16.4453C7.94022 16.4453 8.20312 16.7082 8.20312 17.0312C8.20312 17.3543 7.94022 17.6172 7.61719 17.6172C7.29416 17.6172 7.03125 17.3543 7.03125 17.0312C7.03125 16.7082 7.29416 16.4453 7.61719 16.4453Z"
-                            fill="white" />
-                        <path
-                            d="M14.1406 17.0312C14.1406 18.0005 14.9292 18.7891 15.8984 18.7891C16.8677 18.7891 17.6562 18.0005 17.6562 17.0312C17.6562 16.062 16.8677 15.2734 15.8984 15.2734C14.9292 15.2734 14.1406 16.062 14.1406 17.0312ZM15.8984 16.4453C16.2215 16.4453 16.4844 16.7082 16.4844 17.0312C16.4844 17.3543 16.2215 17.6172 15.8984 17.6172C15.5754 17.6172 15.3125 17.3543 15.3125 17.0312C15.3125 16.7082 15.5754 16.4453 15.8984 16.4453Z"
-                            fill="white" />
-                    </svg>
-                    <span>Buy Now</span>
-                </a>
-            </div>
-        </div>
-    </div>
+
     <div data-elementor-type="cmsmasters_header" data-elementor-id="104"
         class="elementor elementor-104 cmsmasters-location-cmsmasters_header cmsmasters-header-position-absolute-">
         <div class="elementor-inner">
@@ -1879,8 +1742,7 @@
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-467506ee elementor-widget__width-initial cmsmasters-block-default cmsmasters-sticky-default elementor-widget elementor-widget-heading"
-                                    data-id="467506ee" data-element_type="widget"
-                                    data-widget_type="heading.default">
+                                    data-id="467506ee" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
                                         <p class="elementor-heading-title elementor-size-default">©2024 - All Rights
                                             Reserved - This is a sample website.</p>
@@ -2037,8 +1899,7 @@
                                             Functional </a>
                                         <div class="cli-switch">
                                             <input type="checkbox" id="wt-cli-checkbox-functional"
-                                                class="cli-user-preference-checkbox"
-                                                data-id="checkbox-functional" />
+                                                class="cli-user-preference-checkbox" data-id="checkbox-functional" />
                                             <label for="wt-cli-checkbox-functional" class="cli-slider"
                                                 data-cli-enable="Enabled" data-cli-disable="Disabled"><span
                                                     class="wt-cli-sr-only">Functional</span></label>
