@@ -71,7 +71,8 @@
                                                                                             aria-hidden="true"
                                                                                             class="cmsmsdemo-icon- cmsms-demo-icon-chevron-1"></i></span><span
                                                                                         class="elementor-widget-cmsmasters-button__text">More
-                                                                                        About App</span></span></a></div>
+                                                                                        About App</span></span></a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -142,7 +143,8 @@
                                                                                             aria-hidden="true"
                                                                                             class="cmsmsdemo-icon- cmsms-demo-icon-chevron-1"></i></span><span
                                                                                         class="elementor-widget-cmsmasters-button__text">More
-                                                                                        About App</span></span></a></div>
+                                                                                        About App</span></span></a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -193,7 +195,8 @@
                                                                                             aria-hidden="true"
                                                                                             class="cmsmsdemo-icon- cmsms-demo-icon-chevron-1"></i></span><span
                                                                                         class="elementor-widget-cmsmasters-button__text">Show
-                                                                                        Blog</span></span></a></div>
+                                                                                        Blog</span></span></a>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -213,7 +216,8 @@
                                                                 role="button"><span
                                                                     class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-"><span
                                                                         class="elementor-widget-cmsmasters-button__text">Need
-                                                                        Help?</span></span></a></div>
+                                                                        Help?</span></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -522,7 +526,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-1-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-1-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7068 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -720,7 +724,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-9-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-9-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7076 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -925,7 +929,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-8-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-8-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7075 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -1127,7 +1131,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-7-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-7-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7074 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -1323,7 +1327,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-6-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-6-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7073 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -1517,7 +1521,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="770"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/11/service-5-30x25.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/11/service-5-30x25.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-7072 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 770px) 100vw, 770px"
@@ -1811,7 +1815,8 @@
                                                                 role="button"><span
                                                                     class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-"><span
                                                                         class="elementor-widget-cmsmasters-button__text">Learn
-                                                                        More</span></span></a></div>
+                                                                        More</span></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1866,7 +1871,8 @@
                                                                 role="button"><span
                                                                     class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-"><span
                                                                         class="elementor-widget-cmsmasters-button__text">Download
-                                                                        App</span></span></a></div>
+                                                                        App</span></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1885,7 +1891,8 @@
                                                                             aria-hidden="true"
                                                                             class="cmsmsdemo-icon- cmsms-demo-icon-chevron-1"></i></span><span
                                                                         class="elementor-widget-cmsmasters-button__text">Learn
-                                                                        More</span></span></a></div>
+                                                                        More</span></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2488,7 +2495,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-9-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-9-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1367 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -2734,7 +2741,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-8-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-8-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1366 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -2984,7 +2991,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-7-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-7-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1365 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -3237,7 +3244,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-6-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-6-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1364 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -3479,7 +3486,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-5-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-5-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1363 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -3717,7 +3724,7 @@
                                                                                                                                                             decoding="async"
                                                                                                                                                             width="1280"
                                                                                                                                                             height="640"
-                                                                                                                                                            src="{{url('/')}}/wp-content/uploads/sites/3/2021/04/blog-4-30x15.jpg"
+                                                                                                                                                            src="{{ url('/') }}/wp-content/uploads/sites/3/2021/04/blog-4-30x15.jpg"
                                                                                                                                                             class="attachment-full size-full wp-image-1362 cmsmasters_img cmsmasters-lazyload lazyload"
                                                                                                                                                             alt=""
                                                                                                                                                             data-sizes="(max-width: 1280px) 100vw, 1280px"
@@ -4111,7 +4118,8 @@
                                                                 role="button"><span
                                                                     class="elementor-widget-cmsmasters-button__content-wrapper cmsmasters-align-icon-"><span
                                                                         class="elementor-widget-cmsmasters-button__text">Read
-                                                                        FAQs</span></span></a></div>
+                                                                        FAQs</span></span></a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
