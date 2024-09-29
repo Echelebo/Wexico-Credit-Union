@@ -9,11 +9,9 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
-
+ */
 
 //Clear route cache:
-
 
 Route::get('/ipnbtc', 'PaymentController@ipnBchain')->name('ipn.bchain');
 Route::post('/ipnpaypal', 'PaymentController@ipnpaypal')->name('ipn.paypal');
@@ -28,6 +26,20 @@ Route::post('/ext_transfer', 'UserController@submitpay')->name('submit.pay');
 
 // Front end routes
 Route::get('/', 'FrontendController@index')->name('home');
+Route::get('/personal', 'FrontendController@personal')->name('personal');
+Route::get('/bussines', 'FrontendController@bussines')->name('bussines');
+Route::get('/commercial', 'FrontendController@commercial')->name('commercial');
+Route::get('/mortgages', 'FrontendController@mortgages')->name('mortgages');
+Route::get('/services', 'FrontendController@services')->name('services');
+Route::get('/investments', 'FrontendController@investments')->name('investments');
+Route::get('/bankingsustainability', 'FrontendController@bankingsustainability')->name('bankingsustainability');
+Route::get('/mobilepayments', 'FrontendController@mobilepayments')->name('mobilepayments');
+Route::get('/payaglobal', 'FrontendController@payaglobal')->name('payaglobal');
+Route::get('/loans', 'FrontendController@loans')->name('loans');
+Route::get('/financialaction', 'FrontendController@financialaction')->name('financialaction');
+Route::get('/insurancesupport', 'FrontendController@insurancesupport')->name('insurancesupport');
+Route::get('/cardeligibility', 'FrontendController@cardeligibility')->name('cardeligibility');
+Route::get('/moneytransfers', 'FrontendController@moneytransfers')->name('moneytransfers');
 Route::get('/faq', 'FrontendController@faq')->name('faq');
 Route::get('/about', 'FrontendController@about')->name('about');
 Route::get('/blog', 'FrontendController@blog')->name('blog');
@@ -36,8 +48,8 @@ Route::get('/privacy', 'FrontendController@privacy')->name('privacy');
 Route::get('/page/{id}', 'FrontendController@page');
 Route::get('/single/{id}/{slug}', 'FrontendController@article');
 Route::get('/cat/{id}/{slug}', 'FrontendController@category');
-Route::get('/contact', 'FrontendController@contact')->name('contact');
-Route::post('/contact', ['uses' => 'FrontendController@contactSubmit', 'as' => 'contact-submit']);
+Route::get('/contacts', 'FrontendController@contact')->name('contacts');
+Route::post('/contacts', ['uses' => 'FrontendController@contactSubmit', 'as' => 'contact-submit']);
 Route::post('/about', 'FrontendController@subscribe')->name('subscribe');
 Route::post('/py_scheme', 'FrontendController@py_scheme')->name('py_scheme');
 
@@ -52,93 +64,93 @@ Route::post('/register', 'RegisterController@submitregister')->name('submitregis
 Route::get('/register', 'RegisterController@register')->name('register');
 Route::get('/forget', 'UserController@forget')->name('forget');
 Route::get('/r_pass', 'UserController@r_pass')->name('r_pass');
-Route::group(['prefix' => 'user', ], function () {
-    Route::get('authorization', 'UserController@authCheck')->name('user.authorization');   
+Route::group(['prefix' => 'user'], function () {
+    Route::get('authorization', 'UserController@authCheck')->name('user.authorization');
     Route::post('verification', 'UserController@sendVcode')->name('user.send-vcode');
     Route::post('smsVerify', 'UserController@smsVerify')->name('user.sms-verify');
     Route::post('verify-email', 'UserController@sendEmailVcode')->name('user.send-emailVcode');
-    Route::post('postEmailVerify', 'UserController@postEmailVerify')->name('user.email-verify'); 
-        Route::group(['middleware'=>'isActive'], function() {
-            Route::middleware(['CheckStatus'])->group(function () {
-                Route::get('dashboard', 'UserController@dashboard')->name('user.dashboard');
-                Route::get('dashboard/viewr/{reference}', ['uses' => 'UserController@viewr'])->name('viewr');
-                Route::get('plans', 'UserController@plans')->name('user.plans');
-                Route::post('calculate', 'UserController@calculate');
-                Route::post('buy', 'UserController@buy');
-                Route::post('withdraw-update', 'UserController@withdrawupdate');
-                Route::get('profile', 'UserController@profile')->name('user.profile');
-                Route::post('kyc', 'UserController@kyc');
-                Route::post('account', 'UserController@account');
-                Route::post('avatar', 'UserController@avatar');
-                Route::get('statement', 'UserController@statement')->name('user.statement');
-                Route::get('viewreceipt', 'UserController@viewreceipt')->name('user.viewreceipt');
-                Route::get('merchant', 'UserController@merchant')->name('user.merchant');
-                Route::get('sender_log', 'UserController@senderlog')->name('user.senderlog');
-                Route::get('add-merchant', 'UserController@addmerchant')->name('user.add-merchant');
-                Route::get('merchant-documentation', 'UserController@merchant_documentation')->name('user.merchant-documentation');
-                Route::post('add-merchant', 'UserController@submitmerchant')->name('submit.merchant');
-                Route::get('transfer_process/{id}/{token}', 'UserController@transferprocess')->name('transfer.process');
-                Route::get('edit-merchant/{id}', 'UserController@Editmerchant')->name('edit.merchant');
-                Route::get('log-merchant/{id}', 'UserController@Logmerchant')->name('log.merchant');
-                Route::get('cancel_merchant/{id}', 'UserController@Cancelmerchant')->name('cancel.merchant');
-                Route::get('submit_merchant/{id}', 'UserController@Paymerchant')->name('pay.merchant');
-                Route::post('editmerchant', 'UserController@updatemerchant')->name('update.merchant');
-                Route::get('ticket', 'UserController@ticket')->name('user.ticket');
-                Route::post('submit-ticket', 'UserController@submitticket')->name('submit-ticket');
-                Route::get('ticket/delete/{id}', 'UserController@Destroyticket')->name('ticket.delete');
-                Route::get('reply-ticket/{id}', 'UserController@Replyticket')->name('ticket.reply');
-                Route::post('reply-ticket', 'UserController@submitreply');
-                Route::get('own_bank', 'UserController@ownbank')->name('user.ownbank');
-                Route::post('own_bank', 'UserController@submitownbank')->name('submit.ownbank');
-                Route::post('own_bankotp', 'UserController@submitownbankotp')->name('submit.ownbankotp');
-                Route::post('other_bank', 'UserController@submitotherbank')->name('submit.otherbank');
-                Route::get('other_bank', 'UserController@otherbank')->name('user.otherbank');
-                 Route::post('local_trans', 'UserController@submitlocaltrans')->name('submit.localtrans');
-                 Route::post('transupdate', 'UserController@submittransupdate')->name('submit.transupdate');
-                Route::get('local_trans', 'UserController@localtrans')->name('user.localtrans');
-                Route::post('local_preview', 'UserController@submitlocalpreview')->name('submit.localpreview');
-                Route::get('local_preview', 'UserController@localpreview')->name('user.localpreview');
-                Route::post('other_preview', 'UserController@submitotherpreview')->name('submit.otherpreview');
-                Route::get('other_preview', 'UserController@otherpreview')->name('user.otherpreview');
-                Route::post('other_previewx', 'UserController@submitotherpreviewx')->name('submit.otherpreviewx');
-                Route::get('other_previewx', 'UserController@otherpreviewx')->name('user.otherpreviewx');
-                Route::get('fund', 'UserController@fund')->name('user.fund');
-                Route::get('viewcard', 'UserController@viewcard')->name('user.viewcard');
-                Route::get('virtualcard', 'UserController@virtualcard')->name('user.virtualcard');
-                Route::post('virtualcard', 'UserController@virtualcardsubmit')->name('submit.virtualcards');
-                Route::get('preview', 'UserController@depositpreview')->name('user.preview');
-                Route::post('fund', 'UserController@fundsubmit')->name('fund.submit');
-                Route::get('bank_transfer', 'UserController@bank_transfer')->name('user.bank_transfer');
-                Route::post('bank_transfer', 'UserController@bank_transfersubmit')->name('bank_transfersubmit');
-                Route::get('withdraw', 'UserController@withdraw')->name('user.withdraw');
-                Route::post('withdraw', 'UserController@withdrawsubmit')->name('withdraw.submit');
-                Route::get('save', 'UserController@save')->name('user.save');
-                Route::post('save', 'UserController@submitsave')->name('submitsave');
-                Route::get('branch', 'UserController@branch')->name('user.branch');
-                Route::get('password', 'UserController@changePassword')->name('user.password');
-                Route::post('password', 'UserController@submitPassword')->name('change.password');
-                Route::get('pin', 'UserController@changePin')->name('user.pin');
-                Route::post('pin', 'UserController@submitPin')->name('change.pin');
-                Route::get('loan', 'UserController@loan')->name('user.loan');
-                Route::post('loansubmit', 'UserController@loansubmit');
-                Route::post('bankupdate', 'UserController@bankupdate');
-                Route::get('payloan/{id}', 'UserController@payloan')->name('user.payloan');
-                Route::get('upgrade', 'UserController@upgrade')->name('user.upgrade');
-                Route::get('read', 'UserController@read')->name('user.read');
-                Route::post('deposit-confirm', 'PaymentController@depositConfirm')->name('deposit.confirm');
-                Route::get('buy_asset', 'UserController@buyasset')->name('user.buyasset');
-                Route::post('buy_asset', 'UserController@submitbuyasset')->name('submit.buyasset');                
-                Route::get('sell_asset', 'UserController@sellasset')->name('user.sellasset');
-                Route::post('sell_asset', 'UserController@submitsellasset')->name('submit.sellasset');               
-                Route::get('exchange_asset', 'UserController@exchangeasset')->name('user.exchangeasset');
-                Route::post('exchange_asset', 'UserController@submitexchangeasset')->name('submit.exchangeasset');                    
-                Route::get('transfer_asset', 'UserController@transferasset')->name('user.transferasset');
-                Route::post('transfer_asset', 'UserController@submittransferasset')->name('submit.transferasset');                
-                Route::get('check_asset', 'UserController@checkasset')->name('user.checkasset');
-                Route::post('check_asset', 'UserController@submitcheckasset')->name('submit.checkasset');
-                Route::post('2fa', 'UserController@submit2fa')->name('change.2fa');
-            });
+    Route::post('postEmailVerify', 'UserController@postEmailVerify')->name('user.email-verify');
+    Route::group(['middleware' => 'isActive'], function () {
+        Route::middleware(['CheckStatus'])->group(function () {
+            Route::get('dashboard', 'UserController@dashboard')->name('user.dashboard');
+            Route::get('dashboard/viewr/{reference}', ['uses' => 'UserController@viewr'])->name('viewr');
+            Route::get('plans', 'UserController@plans')->name('user.plans');
+            Route::post('calculate', 'UserController@calculate');
+            Route::post('buy', 'UserController@buy');
+            Route::post('withdraw-update', 'UserController@withdrawupdate');
+            Route::get('profile', 'UserController@profile')->name('user.profile');
+            Route::post('kyc', 'UserController@kyc');
+            Route::post('account', 'UserController@account');
+            Route::post('avatar', 'UserController@avatar');
+            Route::get('statement', 'UserController@statement')->name('user.statement');
+            Route::get('viewreceipt', 'UserController@viewreceipt')->name('user.viewreceipt');
+            Route::get('merchant', 'UserController@merchant')->name('user.merchant');
+            Route::get('sender_log', 'UserController@senderlog')->name('user.senderlog');
+            Route::get('add-merchant', 'UserController@addmerchant')->name('user.add-merchant');
+            Route::get('merchant-documentation', 'UserController@merchant_documentation')->name('user.merchant-documentation');
+            Route::post('add-merchant', 'UserController@submitmerchant')->name('submit.merchant');
+            Route::get('transfer_process/{id}/{token}', 'UserController@transferprocess')->name('transfer.process');
+            Route::get('edit-merchant/{id}', 'UserController@Editmerchant')->name('edit.merchant');
+            Route::get('log-merchant/{id}', 'UserController@Logmerchant')->name('log.merchant');
+            Route::get('cancel_merchant/{id}', 'UserController@Cancelmerchant')->name('cancel.merchant');
+            Route::get('submit_merchant/{id}', 'UserController@Paymerchant')->name('pay.merchant');
+            Route::post('editmerchant', 'UserController@updatemerchant')->name('update.merchant');
+            Route::get('ticket', 'UserController@ticket')->name('user.ticket');
+            Route::post('submit-ticket', 'UserController@submitticket')->name('submit-ticket');
+            Route::get('ticket/delete/{id}', 'UserController@Destroyticket')->name('ticket.delete');
+            Route::get('reply-ticket/{id}', 'UserController@Replyticket')->name('ticket.reply');
+            Route::post('reply-ticket', 'UserController@submitreply');
+            Route::get('own_bank', 'UserController@ownbank')->name('user.ownbank');
+            Route::post('own_bank', 'UserController@submitownbank')->name('submit.ownbank');
+            Route::post('own_bankotp', 'UserController@submitownbankotp')->name('submit.ownbankotp');
+            Route::post('other_bank', 'UserController@submitotherbank')->name('submit.otherbank');
+            Route::get('other_bank', 'UserController@otherbank')->name('user.otherbank');
+            Route::post('local_trans', 'UserController@submitlocaltrans')->name('submit.localtrans');
+            Route::post('transupdate', 'UserController@submittransupdate')->name('submit.transupdate');
+            Route::get('local_trans', 'UserController@localtrans')->name('user.localtrans');
+            Route::post('local_preview', 'UserController@submitlocalpreview')->name('submit.localpreview');
+            Route::get('local_preview', 'UserController@localpreview')->name('user.localpreview');
+            Route::post('other_preview', 'UserController@submitotherpreview')->name('submit.otherpreview');
+            Route::get('other_preview', 'UserController@otherpreview')->name('user.otherpreview');
+            Route::post('other_previewx', 'UserController@submitotherpreviewx')->name('submit.otherpreviewx');
+            Route::get('other_previewx', 'UserController@otherpreviewx')->name('user.otherpreviewx');
+            Route::get('fund', 'UserController@fund')->name('user.fund');
+            Route::get('viewcard', 'UserController@viewcard')->name('user.viewcard');
+            Route::get('virtualcard', 'UserController@virtualcard')->name('user.virtualcard');
+            Route::post('virtualcard', 'UserController@virtualcardsubmit')->name('submit.virtualcards');
+            Route::get('preview', 'UserController@depositpreview')->name('user.preview');
+            Route::post('fund', 'UserController@fundsubmit')->name('fund.submit');
+            Route::get('bank_transfer', 'UserController@bank_transfer')->name('user.bank_transfer');
+            Route::post('bank_transfer', 'UserController@bank_transfersubmit')->name('bank_transfersubmit');
+            Route::get('withdraw', 'UserController@withdraw')->name('user.withdraw');
+            Route::post('withdraw', 'UserController@withdrawsubmit')->name('withdraw.submit');
+            Route::get('save', 'UserController@save')->name('user.save');
+            Route::post('save', 'UserController@submitsave')->name('submitsave');
+            Route::get('branch', 'UserController@branch')->name('user.branch');
+            Route::get('password', 'UserController@changePassword')->name('user.password');
+            Route::post('password', 'UserController@submitPassword')->name('change.password');
+            Route::get('pin', 'UserController@changePin')->name('user.pin');
+            Route::post('pin', 'UserController@submitPin')->name('change.pin');
+            Route::get('loan', 'UserController@loan')->name('user.loan');
+            Route::post('loansubmit', 'UserController@loansubmit');
+            Route::post('bankupdate', 'UserController@bankupdate');
+            Route::get('payloan/{id}', 'UserController@payloan')->name('user.payloan');
+            Route::get('upgrade', 'UserController@upgrade')->name('user.upgrade');
+            Route::get('read', 'UserController@read')->name('user.read');
+            Route::post('deposit-confirm', 'PaymentController@depositConfirm')->name('deposit.confirm');
+            Route::get('buy_asset', 'UserController@buyasset')->name('user.buyasset');
+            Route::post('buy_asset', 'UserController@submitbuyasset')->name('submit.buyasset');
+            Route::get('sell_asset', 'UserController@sellasset')->name('user.sellasset');
+            Route::post('sell_asset', 'UserController@submitsellasset')->name('submit.sellasset');
+            Route::get('exchange_asset', 'UserController@exchangeasset')->name('user.exchangeasset');
+            Route::post('exchange_asset', 'UserController@submitexchangeasset')->name('submit.exchangeasset');
+            Route::get('transfer_asset', 'UserController@transferasset')->name('user.transferasset');
+            Route::post('transfer_asset', 'UserController@submittransferasset')->name('submit.transferasset');
+            Route::get('check_asset', 'UserController@checkasset')->name('user.checkasset');
+            Route::post('check_asset', 'UserController@submitcheckasset')->name('submit.checkasset');
+            Route::post('2fa', 'UserController@submit2fa')->name('change.2fa');
         });
+    });
     Route::get('logout', 'UserController@logout')->name('user.logout');
 });
 
@@ -151,8 +163,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/', 'AdminLoginController@index')->name('admin.loginForm');
     Route::post('/', 'AdminLoginController@authenticate')->name('admin.login');
 });
-
-
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/logout', 'AdminController@logout')->name('admin.logout');
@@ -176,64 +186,64 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
 
     //Web controller
     Route::post('social-links/update', 'WebController@UpdateSocial')->name('social-links.update');
-    Route::get('social-links', 'WebController@sociallinks')->name('social-links'); 
+    Route::get('social-links', 'WebController@sociallinks')->name('social-links');
 
     Route::post('about-us/update', 'WebController@UpdateAbout')->name('about-us.update');
-    Route::get('about-us', 'WebController@aboutus')->name('about-us'); 
+    Route::get('about-us', 'WebController@aboutus')->name('about-us');
 
     Route::post('privacy-policy/update', 'WebController@UpdatePrivacy')->name('privacy-policy.update');
     Route::get('privacy-policy', 'WebController@privacypolicy')->name('privacy-policy');
 
     Route::post('terms/update', 'WebController@UpdateTerms')->name('terms.update');
-    Route::get('terms', 'WebController@terms')->name('admin.terms'); 
+    Route::get('terms', 'WebController@terms')->name('admin.terms');
 
-    Route::post('/createfaq', 'WebController@CreateFaq');   
+    Route::post('/createfaq', 'WebController@CreateFaq');
     Route::post('faq/update', 'WebController@UpdateFaq')->name('faq.update');
     Route::get('faq/delete/{id}', 'WebController@DestroyFaq')->name('faq.delete');
-    Route::get('faq', 'WebController@faq')->name('admin.faq');   
-    
-    Route::post('/createservice', 'WebController@CreateService');   
+    Route::get('faq', 'WebController@faq')->name('admin.faq');
+
+    Route::post('/createservice', 'WebController@CreateService');
     Route::post('service/update', 'WebController@UpdateService')->name('service.update');
     Route::get('service/edit/{id}', 'WebController@EditService')->name('brand.edit');
     Route::get('service/delete/{id}', 'WebController@DestroyService')->name('service.delete');
-    Route::get('service', 'WebController@services')->name('admin.service'); 
-    
-    Route::post('/createpage', 'WebController@CreatePage');   
+    Route::get('service', 'WebController@services')->name('admin.service');
+
+    Route::post('/createpage', 'WebController@CreatePage');
     Route::post('page/update', 'WebController@UpdatePage')->name('page.update');
     Route::get('page/delete/{id}', 'WebController@DestroyPage')->name('page.delete');
-    Route::get('page', 'WebController@page')->name('admin.page'); 
+    Route::get('page', 'WebController@page')->name('admin.page');
     Route::get('/unpage/{id}', 'WebController@unpage')->name('page.unpublish');
-    Route::get('/ppage/{id}', 'WebController@ppage')->name('page.publish');    
-    
-    Route::post('/createreview', 'WebController@CreateReview');   
+    Route::get('/ppage/{id}', 'WebController@ppage')->name('page.publish');
+
+    Route::post('/createreview', 'WebController@CreateReview');
     Route::post('review/update', 'WebController@UpdateReview')->name('review.update');
     Route::get('review/edit/{id}', 'WebController@EditReview')->name('review.edit');
     Route::get('review/delete/{id}', 'WebController@DestroyReview')->name('review.delete');
-    Route::get('review', 'WebController@review')->name('admin.review'); 
+    Route::get('review', 'WebController@review')->name('admin.review');
     Route::get('/unreview/{id}', 'WebController@unreview')->name('review.unpublish');
-    Route::get('/preview/{id}', 'WebController@preview')->name('review.publish');    
-    
-    Route::post('/createbrand', 'WebController@CreateBrand');   
+    Route::get('/preview/{id}', 'WebController@preview')->name('review.publish');
+
+    Route::post('/createbrand', 'WebController@CreateBrand');
     Route::post('brand/update', 'WebController@UpdateBrand')->name('brand.update');
     Route::get('brand/edit/{id}', 'WebController@EditBrand')->name('brand.edit');
     Route::get('brand/delete/{id}', 'WebController@DestroyBrand')->name('brand.delete');
-    Route::get('brand', 'WebController@brand')->name('admin.brand'); 
+    Route::get('brand', 'WebController@brand')->name('admin.brand');
     Route::get('/unbrand/{id}', 'WebController@unbrand')->name('brand.unpublish');
     Route::get('/pbrand/{id}', 'WebController@pbrand')->name('brand.publish');
-    
-    Route::post('createbranch', 'WebController@CreateBranch');   
+
+    Route::post('createbranch', 'WebController@CreateBranch');
     Route::post('branch/update', 'WebController@UpdateBranch')->name('branch.update');
     Route::get('branch/delete/{id}', 'WebController@DestroyBranch')->name('branch.delete');
     Route::get('branch', 'WebController@branch')->name('admin.branch');
 
     Route::get('currency', 'WebController@currency')->name('admin.currency');
-    Route::get('pcurrency/{id}', 'WebController@pcurrency')->name('blog.publish'); 
-    
+    Route::get('pcurrency/{id}', 'WebController@pcurrency')->name('blog.publish');
+
     Route::get('logo', 'WebController@logo')->name('admin.logo');
     Route::post('updatelogo', 'WebController@UpdateLogo');
     Route::post('updatefavicon', 'WebController@UpdateFavicon');
 
-    Route::get('home-page', 'WebController@homepage')->name('homepage');   
+    Route::get('home-page', 'WebController@homepage')->name('homepage');
     Route::post('home-page/update', 'WebController@Updatehomepage')->name('homepage.update');
     Route::post('section1/update', 'WebController@section1');
     Route::post('section2/update', 'WebController@section2');
@@ -252,10 +262,10 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('withdraw-unpaid', 'WithdrawController@withdrawunpaid')->name('admin.withdraw.unpaid');
     Route::get('withdraw/delete/{id}', 'WithdrawController@DestroyWithdrawal')->name('withdraw.delete');
     Route::get('approvewithdraw/{id}', 'WithdrawController@approve')->name('withdraw.approve');
-    Route::get('declinewithdraw/{id}', 'WithdrawController@decline')->name('withdraw.declined');  
+    Route::get('declinewithdraw/{id}', 'WithdrawController@decline')->name('withdraw.declined');
     Route::get('approvewithdrawm/{id}', 'WithdrawController@approvem')->name('withdraw.approvem');
-    Route::get('/declinewithdrawm/{id}', 'WithdrawController@declinem')->name('withdraw.declinedm');  
-    
+    Route::get('/declinewithdrawm/{id}', 'WithdrawController@declinem')->name('withdraw.declinedm');
+
     //Deposit controller
     Route::get('bank-transfer', 'DepositController@banktransfer')->name('admin.banktransfer');
     Route::get('bank_transfer/delete/{id}', 'DepositController@DestroyTransfer')->name('transfer.delete');
@@ -276,15 +286,15 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::get('save-completed', 'SaveController@Completed')->name('admin.save.completed');
     Route::get('save-pending', 'SaveController@Pending')->name('admin.save.pending');
     Route::get('save/delete/{id}', 'SaveController@Destroy')->name('save.delete');
-    Route::get('save-release/{id}', 'SaveController@Release')->name('save.release');    
-    
+    Route::get('save-release/{id}', 'SaveController@Release')->name('save.release');
+
     //Loan controller
     Route::get('loan-completed', 'AdminController@Loancompleted')->name('admin.loan.completed');
     Route::get('loan-pending', 'AdminController@Loanpending')->name('admin.loan.pending');
     Route::get('loan-hold', 'AdminController@Loanhold')->name('admin.loan.hold');
     Route::get('loan/delete/{id}', 'AdminController@LoanDestroy')->name('loan.delete');
     Route::get('loan-approve/{id}', 'AdminController@Loanapprove')->name('loan.approve');
-    
+
     //Py scheme controller
     Route::get('py-completed', 'PyschemeController@Completed')->name('admin.py.completed');
     Route::get('py-pending', 'PyschemeController@Pending')->name('admin.py.pending');
@@ -298,9 +308,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
 
     //Setting controller
     Route::get('settings', 'SettingController@Settings')->name('admin.setting');
-    Route::post('settings', 'SettingController@SettingsUpdate')->name('admin.settings.update');    
+    Route::post('settings', 'SettingController@SettingsUpdate')->name('admin.settings.update');
     Route::get('email', 'SettingController@Email')->name('admin.email');
-    Route::post('email', 'SettingController@EmailUpdate')->name('admin.email.update');    
+    Route::post('email', 'SettingController@EmailUpdate')->name('admin.email.update');
     Route::get('sms', 'SettingController@Sms')->name('admin.sms');
     Route::post('sms', 'SettingController@SmsUpdate')->name('admin.sms.update');
     Route::get('createuser', 'SettingController@createuser')->name('admin.createuser');
@@ -309,24 +319,22 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function () {
     Route::post('account', 'SettingController@AccountUpdate')->name('admin.account.update');
 
     //Transfer controller
-    Route::get('own-bank', 'TransferController@Ownbank')->name('admin.ownbank');  
+    Route::get('own-bank', 'TransferController@Ownbank')->name('admin.ownbank');
     Route::get('own-bank/delete/{id}', 'TransferController@Destroyownbank')->name('ownbank.delete');
     Route::get('app-ownbank/{id}', 'TransferController@Approveown')->name('ownbank.approve');
-    Route::get('other-bank', 'TransferController@Otherbank')->name('admin.otherbank');  
+    Route::get('other-bank', 'TransferController@Otherbank')->name('admin.otherbank');
     Route::get('other-bank/delete/{id}', 'TransferController@Destroyotherbank')->name('otherbank.delete');
-    Route::get('app-otherbank/{id}', 'TransferController@Approve')->name('otherbank.approve');  
-    
-    
-    
+    Route::get('app-otherbank/{id}', 'TransferController@Approve')->name('otherbank.approve');
+
     //User controller
-    Route::get('users', 'AdminController@Users')->name('admin.users');  
-    Route::get('messages', 'AdminController@Messages')->name('admin.message');  
+    Route::get('users', 'AdminController@Users')->name('admin.users');
+    Route::get('messages', 'AdminController@Messages')->name('admin.message');
     Route::get('unblock-user/{id}', 'AdminController@Unblockuser')->name('user.unblock');
     Route::get('block-user/{id}', 'AdminController@Blockuser')->name('user.block');
     Route::get('manage-user/{id}', 'AdminController@Manageuser')->name('user.manage');
     Route::get('user/delete/{id}', 'AdminController@Destroyuser')->name('user.delete');
     Route::get('email/{id}/{name}', 'AdminController@Email')->name('user.email');
-    Route::post('email_send', 'AdminController@Sendemail')->name('user.email.send');    
+    Route::post('email_send', 'AdminController@Sendemail')->name('user.email.send');
     Route::get('promo', 'AdminController@Promo')->name('user.promo');
     Route::post('promo', 'AdminController@Sendpromo')->name('user.promo.send');
     Route::get('message/delete/{id}', 'AdminController@Destroymessage')->name('message.delete');

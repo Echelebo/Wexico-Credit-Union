@@ -29,6 +29,90 @@ class FrontendController extends Controller
         return view('front.index', $data);
     }
 
+    public function personal()
+    {
+        $data['title'] = "Personal";
+        return view('front.personal', $data);
+    }
+
+    public function bussines()
+    {
+        $data['title'] = "bussines";
+        return view('front.bussines', $data);
+    }
+
+    public function commercial()
+    {
+        $data['title'] = "commercial";
+        return view('front.commercial', $data);
+    }
+
+    public function mortgages()
+    {
+        $data['title'] = "mortgages";
+        return view('front.mortgages', $data);
+    }
+
+    public function services()
+    {
+        $data['title'] = "services";
+        return view('front.services', $data);
+    }
+
+    public function investments()
+    {
+        $data['title'] = "Investments";
+        return view('front.Investments', $data);
+    }
+
+    public function bankingsustainability()
+    {
+        $data['title'] = "Banking Sustainability";
+        return view('front.bankingsustainability', $data);
+    }
+
+    public function mobilepayments()
+    {
+        $data['title'] = "Mobile Payments";
+        return view('front.mobilepayments', $data);
+    }
+
+    public function payaglobal()
+    {
+        $data['title'] = "Paya Global";
+        return view('front.payaglobal', $data);
+    }
+
+    public function loans()
+    {
+        $data['title'] = "Loans";
+        return view('front.loans', $data);
+    }
+
+    public function financialaction()
+    {
+        $data['title'] = "Financial Action";
+        return view('front.financialaction', $data);
+    }
+
+    public function insurancesupport()
+    {
+        $data['title'] = "Insurance Support";
+        return view('front.insurancesupport', $data);
+    }
+
+    public function cardeligibility()
+    {
+        $data['title'] = "Card Eligibility";
+        return view('front.cardeligibility', $data);
+    }
+
+    public function moneytransfers()
+    {
+        $data['title'] = "Money Transfers";
+        return view('front.moneytransfers', $data);
+    }
+
     public function about()
     {
         $data['title'] = "About Us";
